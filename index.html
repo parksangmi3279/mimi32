@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박상미 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
+</head>
+
+<body>
+    <div class="wrap" id="fullpage">
+        <section class="section"><img src="img1/sangmi.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/sangmi2.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/sangmi3.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/sangmi4.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/sangmi5.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/sangmi6.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/sangmi7.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/sangmi8.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/sangmi9.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/sangmi10.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/sangmi11.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/sangmi12.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/sangmi13.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/sangmi14.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/sangmi15.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/sangmi16.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/sangmi17.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/sangmi19.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/sangmi20.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/sangmi21.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img5/sangmi22.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img5/sangmi23.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img5/sangmi24.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img5/sangmi25.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img5/sangmi26.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img5/sangmi27.jpg" alt="포트폴리오"></section>
+    </div>
+
+
+    <script>
+        new fullpage('#fullpage', {
+            navigation: true,
+            responsiveWidth: 700,
+            anchors: ['home', 'about-us', 'contact'],
+            parallax: true,
+            onLeave: function (origin, destination, direction) {
+                console.log("Leaving section" + origin.index);
+            },
+        });
+    </script>
+</body>
+
+</html>
